@@ -1,0 +1,90 @@
+/* Basic page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    text-align: center;
+}
+
+/* Top black bar */
+.top-bar {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.top-bar-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    font-size: 14px;
+}
+
+/* Main navigation bar */
+.navbar {
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-link {
+    color: #000 !important;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: #c7a349 !important;
+}
+
+/* Highlight for the active page */
+.active-page {
+    color: #c7a349 !important;
+    font-weight: 700;
+}
+
+/* Main content box */
+main {
+    padding: 20px;
+    background-color: white;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+/* Car name */
+.card-title {
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+/* Car name gold hover */
+.card-title:hover {
+    color: #c7a349;
+    cursor: pointer;
+}
+
+/* Card shadow on hover */
+.card {
+    border: 1px solid #ddd;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Image zoom on hover */
+.card img {
+    width: 100%;
