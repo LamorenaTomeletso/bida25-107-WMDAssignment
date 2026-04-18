@@ -25,10 +25,12 @@ body {
 }
 
 .col-md-4 {
-    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .card-body {
+    padding: 12px;
     text-align: center;
 }
 
