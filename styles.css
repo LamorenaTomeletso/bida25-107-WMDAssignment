@@ -74,7 +74,14 @@ body {
     color: #ffffff;
     text-align: center;
     border-radius: 6px;
+
+    max-width: 600px;     
+    width: 90%;
+    }
+    .hero-content h1 {
+    margin-bottom: 10px;
 }
+
 
 
    MAIN CONTENT AREA
