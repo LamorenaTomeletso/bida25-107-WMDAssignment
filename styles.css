@@ -1,3 +1,5 @@
+   GLOBAL STYLES
+
 
 body {
     font-family: Arial, sans-serif;
@@ -6,50 +8,8 @@ body {
     padding: 0;
 }
 
-.card {
-    border: 2px solid #000;     
-    border-radius: 6px;
-    overflow: hidden;           
-    background-color: #fff;
-}
 
-.card img {
-    width: 100%;
-    aspect-ratio: 1 / 1;   
-    object-fit: contain;   
-    background-color: #000; 
-}
-
-.row {
-    margin-bottom: 20px;
-}
-
-.col-md-4 {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.card-body {
-    padding: 12px;
-    text-align: center;
-}
-
-main {
-    background: #ffffff;
-    padding: 20px;
-    max-width: 1000px;
-    margin: 30px auto;
-    border-radius: 6px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    color: #555;
-    margin-top: 40px;
-}
-
-
+   HEADER SECTION
 
 .header-top {
     background-color: #000;
@@ -62,7 +22,10 @@ footer {
     margin: auto;
     display: flex;
     justify-content: center;
+    gap: 40px;
 }
+
+   NAVIGATION
 
 .header-nav {
     background-color: #ffffff;
@@ -76,14 +39,9 @@ footer {
     padding: 0;
 
     display: flex;
-    justify-content: center;   
+    justify-content: center;
     align-items: center;
-    gap: 35px;                
-}
-
-.header-nav ul li {
-    margin: 0;
-    padding: 0;
+    gap: 35px;
 }
 
 .header-nav ul li a {
@@ -94,18 +52,15 @@ footer {
     letter-spacing: 0.5px;
 }
 
-.header-nav ul li a:hover {
-    color: #c7a349; 
+.header-nav ul li a:hover,
+.header-nav ul li a.active {
+    color: #c7a349;
 }
 
-.header-nav ul li a.active {
-    color: #c7a349; 
-}
+   HERO SECTION HOME PAGE
 
 .hero {
-    background-image: url("images/heroimage.webp");
-    background-size: cover;
-    background-position: center;
+    background: url("images/heroimage.webp") center / cover no-repeat;
     height: 400px;
 
     display: flex;
@@ -119,4 +74,56 @@ footer {
     color: #ffffff;
     text-align: center;
     border-radius: 6px;
+}
+
+
+   MAIN CONTENT AREA
+
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    border-radius: 6px;
+}
+
+   INVENTORY CARDS
+
+
+.card {
+    border: 2px solid #000;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background-color: #000;
+}
+
+.card-body {
+    padding: 12px;
+    text-align: center;
+}
+
+   GRID SPACING
+
+.row {
+    margin-bottom: 20px;
+}
+
+.col-md-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+   FOOTER
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #555;
+    margin-top: 40px;
 }
