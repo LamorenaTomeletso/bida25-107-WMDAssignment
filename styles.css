@@ -60,13 +60,18 @@ body {
    HERO SECTION HOME PAGE
 
 .hero {
-    background: url("images/heroimage.webp") center / cover no-repeat;
+    background-image: url("images/heroimage.webp");
+    background-size: cover;
+    background-position: center;
+
     height: 400px;
+    width: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 .hero-content {
     background-color: rgba(0, 0, 0, 0.6);
