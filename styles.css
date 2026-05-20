@@ -79,13 +79,12 @@ NAVIGATION
 }
 
 .hero-content {
-    background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 25px;
     text-align: center;
-    border-radius: 5px;
     max-width: 600px;
     width: 90%;
+
 }
 
 .hero-content h1 {
