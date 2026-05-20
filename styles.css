@@ -128,6 +128,18 @@ CARDS
     text-align: center;
 }
 
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.2s ease; /* smooth movement */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* moves card up */
+}
+
 
 GRID 
 
