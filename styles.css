@@ -67,33 +67,37 @@ NAVIGATION
  HERO SECTION
 
 .hero {
-    background-image: url("images/heroimage.webp");
+    background: url("images/heroimage.webp") no-repeat center center;
     background-size: cover;
-    background-position: center;
 
-    height: 420px;
+    height: 450px;
+    width: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .hero-content {
     color: #fff;
-    padding: 25px;
     text-align: center;
     max-width: 600px;
-    width: 90%;
-
 }
 
-.hero-content h1 {
-    margin-bottom: 10px;
-    font-size: 32px;
-}
+.hero {
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),
+    url("images/heroimage.webp") no-repeat center center;
 
-.hero-content p {
-    font-size: 16px;
+    background-size: cover;
+
+    height: 450px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
