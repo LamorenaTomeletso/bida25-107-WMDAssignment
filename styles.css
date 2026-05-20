@@ -182,3 +182,16 @@ footer {
     max-height: 80%;
     border-radius: 5px;
 }
+
+.card img {
+    cursor: pointer;
+}
+
+.card img:hover {
+    transform: scale(1.03);
+    transition: 0.2s;
+}
+
+.popup {
+    transition: 0.2s;
+}
