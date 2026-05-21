@@ -208,3 +208,31 @@ img {
         padding: 15px;
     }
 }
+
+.btn-vehicles {
+    display: inline-block;
+    background-color: #c7a349;  /* gold color */
+    color: #fff;
+
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+
+    transition: 0.3s;
+}
+
+/* hover effect */
+.btn-vehicles:hover {
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #c7a349;
+}
+
+main {
+    text-align: center;
+}
+
+.btn-vehicles {
+    font-size: 18px;
+}
