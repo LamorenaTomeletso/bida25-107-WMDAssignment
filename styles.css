@@ -14,22 +14,35 @@ h1, h2, h3 {
 
  HEADER TOP
 
-.header-top {
+  .header-top {
     background-color: #000;
     color: #fff;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .header-top-inner {
     max-width: 1100px;
-    margin: auto;
+    margin: 0 auto;
+
     display: flex;
     justify-content: space-between;
-    padding: 0 15px;
-    font-size: 14px;
+    align-items: center;
 }
 
+.header-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
+.header-item i {
+    color: #fff;
+    font-size: 16px;
+}
+
+.header-item span {
+    color: #fff;
+}
 NAVIGATION
 
 .header-nav {
@@ -41,7 +54,7 @@ NAVIGATION
 .header-nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 15px 0;
 
     display: flex;
     justify-content: center;
@@ -52,7 +65,6 @@ NAVIGATION
     text-decoration: none;
     color: #000;
     font-weight: bold;
-    font-size: 14px;
 }
 
 .header-nav ul li a:hover {
@@ -67,22 +79,26 @@ NAVIGATION
  HERO SECTION
 
 .hero {
-    background: url("images/heroimage.webp") no-repeat center center;
+    background-image: url("images/heroimage.webp");
     background-size: cover;
+    background-position: center;
 
-    height: 450px;
+    height: 400px;
     width: 100%;
 
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 .hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 25px;
     color: #fff;
     text-align: center;
+    border-radius: 5px;
+
     max-width: 600px;
 }
-
 .hero {
     background: linear-gradient(
         rgba(0,0,0,0.4),
