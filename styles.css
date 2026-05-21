@@ -237,3 +237,14 @@ img {
         margin: 20px;
     }
 }
+
+.header-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-item i {
+    color: #ffffff;
+    font-size: 18px;
+}
