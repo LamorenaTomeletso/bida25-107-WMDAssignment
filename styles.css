@@ -67,10 +67,7 @@ h1, h2, h3 {
 
 .header-nav ul li a.active {
     color: #c7a349;
-}
-
-
-   
+}  
 
 .hero {
     background: linear-gradient(
@@ -236,3 +233,38 @@ main {
 .btn-vehicles {
     font-size: 18px;
 }
+
+.about-hero {
+    background-image: url("images/aboutpagepic.jpg"); 
+    background-size: cover;
+    background-position: center;
+
+    height: 500px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* dark overlay for readability */
+.about-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    text-align: center;
+}
+
+/* main heading */
+.about-overlay h1 {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* paragraph text */
+.about-overlay p {
+    color: #ffffff;
+    font-size: 16px;
+}
+
