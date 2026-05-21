@@ -1,4 +1,4 @@
- GLOBAL STYLES 
+GLOBAL STYLES
 
 body {
     font-family: Arial, sans-serif;
@@ -12,9 +12,9 @@ h1, h2, h3 {
 }
 
 
- HEADER TOP
+   HEADER TOP
 
-  .header-top {
+.header-top {
     background-color: #000;
     color: #fff;
     padding: 10px 0;
@@ -40,10 +40,8 @@ h1, h2, h3 {
     font-size: 16px;
 }
 
-.header-item span {
-    color: #fff;
-}
-NAVIGATION
+
+   NAVIGATION
 
 .header-nav {
     background-color: #fff;
@@ -54,7 +52,7 @@ NAVIGATION
 .header-nav ul {
     list-style: none;
     margin: 0;
-    padding: 15px 0;
+    padding: 0;
 
     display: flex;
     justify-content: center;
@@ -76,10 +74,15 @@ NAVIGATION
 }
 
 
- HERO SECTION
+   HERO SECTION
 
 .hero {
-    background-image: url("images/heroimage.webp");
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),
+    url("images/heroimage.webp");
+
     background-size: cover;
     background-position: center;
 
@@ -87,37 +90,19 @@ NAVIGATION
     width: 100%;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
+
 .hero-content {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 25px;
     color: #fff;
     text-align: center;
-    border-radius: 5px;
 
     max-width: 600px;
 }
-.hero {
-    background: linear-gradient(
-        rgba(0,0,0,0.4),
-        rgba(0,0,0,0.4)
-    ),
-    url("images/heroimage.webp") no-repeat center center;
-
-    background-size: cover;
-
-    height: 450px;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 
-MAIN CONTENT 
+   MAIN CONTENT
 
 main {
     background-color: #fff;
@@ -128,19 +113,25 @@ main {
 }
 
 
-CARDS
+   CARDS
 
 .card {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card img {
     width: 100%;
     height: 250px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .card-body {
@@ -148,20 +139,8 @@ CARDS
     text-align: center;
 }
 
-.card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    transition: transform 0.2s ease; /* smooth movement */
-}
 
-.card:hover {
-    transform: translateY(-5px); /* moves card up */
-}
-
-
-GRID 
+   GRID
 
 .row {
     display: flex;
@@ -174,7 +153,7 @@ GRID
 }
 
 
- FOOTER
+   FOOTER
 
 footer {
     text-align: center;
@@ -182,6 +161,9 @@ footer {
     color: #555;
     margin-top: 30px;
 }
+
+
+   POPUP IMAGE
 
 .popup {
     display: none;
@@ -203,44 +185,8 @@ footer {
     border-radius: 5px;
 }
 
-.card img {
-    cursor: pointer;
-}
 
-.card img:hover {
-    transform: scale(1.03);
-    transition: 0.2s;
-}
-
-.popup {
-    transition: 0.2s;
-}
-
-@media (max-width: 768px) {
-    .header-nav ul {
-        flex-direction: column;
-        gap: 15px;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero {
-        height: 300px;
-    }
-
-    .hero-content {
-        padding: 15px;
-        max-width: 90%;
-    }
-
-    .hero-content h1 {
-        font-size: 20px;
-    }
-
-    .hero-content p {
-        font-size: 14px;
-    }
-}
+   RESPONSIVENESS
 
 img {
     max-width: 100%;
@@ -248,19 +194,26 @@ img {
 }
 
 @media (max-width: 768px) {
-    main {
-        padding: 10px;
-        margin: 20px;
+
+    .header-nav ul {
+        flex-direction: column;
+        gap: 15px;
     }
-}
 
-.header-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+    .hero {
+        height: 300px;
+    }
 
-.header-item i {
-    color: #ffffff;
-    font-size: 18px;
+    .hero-content h1 {
+        font-size: 22px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    main {
+        margin: 20px;
+        padding: 15px;
+    }
 }
