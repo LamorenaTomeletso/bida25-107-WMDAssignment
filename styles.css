@@ -1,4 +1,4 @@
-/* GLOBAL STYLES */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -10,7 +10,7 @@ h1, h2, h3 {
     margin: 0;
 }
 
- HEADER TOP 
+ 
 .header-top {
     background-color: #000;
     color: #fff;
@@ -38,8 +38,6 @@ h1, h2, h3 {
     font-size: 16px;
 }
 
-
-   NAVIGATION
 
 .header-nav {
     background-color: #fff;
@@ -72,7 +70,7 @@ h1, h2, h3 {
 }
 
 
-   HERO SECTION
+   
 
 .hero {
     background: linear-gradient(
@@ -100,7 +98,6 @@ h1, h2, h3 {
 }
 
 
-   MAIN CONTENT
 
 main {
     background-color: #fff;
@@ -111,7 +108,7 @@ main {
 }
 
 
-   CARDS
+
 
 .card {
     background-color: #fff;
@@ -138,7 +135,7 @@ main {
 }
 
 
-   GRID
+   
 
 .row {
     display: flex;
@@ -151,7 +148,6 @@ main {
 }
 
 
-   FOOTER
 
 footer {
     text-align: center;
@@ -161,7 +157,6 @@ footer {
 }
 
 
-   POPUP IMAGE
 
 .popup {
     display: none;
@@ -183,8 +178,6 @@ footer {
     border-radius: 5px;
 }
 
-
-   RESPONSIVENESS
 
 img {
     max-width: 100%;
