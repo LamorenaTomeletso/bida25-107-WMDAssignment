@@ -292,5 +292,11 @@ h2 {
 
 .car-description {
     display: block;
+    width: 100%;
     margin-top: 5px;
+}
+
+h2 {
+    display: block;
+    width: 100%;
 }
