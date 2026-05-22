@@ -66,3 +66,19 @@
 <!-- FOOTER -->
 <footer>
     <p>&copy; 2026 Car Kingdom</p>
+
+ <script>
+function showMessage(event) {
+    event.preventDefault();
+
+    let message = document.getElementById("successMessage");
+    message.style.display = "block";
+
+    document.querySelector("form").reset();
+
+    setTimeout(function () {
+        message.style.display = "none";
+    }, 3000);
+}
+</script>
+``
