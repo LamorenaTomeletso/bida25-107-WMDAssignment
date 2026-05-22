@@ -235,16 +235,7 @@ main {
 }
 
 .about-hero {
-    background-image: url("images/aboutpagepic.jpg"); 
-    background-size: cover;
-    background-position: center;
-
-    height: 500px;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-image: url("images/aboutpagepic.jpg");
 }
 
 /* dark overlay for readability */
