@@ -280,3 +280,12 @@ main h2 {
     color: #c7a349;
     margin-top: 20px;
 }
+
+.container h2 {
+    color: #c7a349;
+}
+
+h2 {
+    color: #c7a349;
+    margin-bottom: 10px;
+}
