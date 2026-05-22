@@ -235,20 +235,33 @@ main {
 }
 
 .about-hero {
-    background-image: url("images/aboutpagepic.jpg");
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),
+    url("images/aboutpagepic.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    height: 90vh;       
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* dark overlay for readability */
 .about-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 40px;
     text-align: center;
+    color: #fff;
+    max-width: 900px;
 }
 
 /* main heading */
 .about-overlay h1 {
-    color: #ffffff;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
     margin-bottom: 15px;
 }
