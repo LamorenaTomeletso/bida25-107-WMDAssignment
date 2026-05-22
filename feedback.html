@@ -6,9 +6,9 @@
     <title>Car Kingdom - Feedback</title>
 
     <link rel="stylesheet" href="styles.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
 <!-- TOP BLACK BAR -->
@@ -27,9 +27,8 @@
 
     </div>
 </div>
-``
 
-<!-- WHITE NAV BAR -->
+<!-- NAV BAR -->
 <nav class="header-nav">
     <ul>
         <li><a href="index.html">HOME</a></li>
@@ -39,21 +38,22 @@
         <li><a href="feedback.html" class="active">FEEDBACK</a></li>
     </ul>
 </nav>
+
+<!-- MAIN -->
 <main>
     <h2>Feedback Form</h2>
 
-    <form>
-        <label for="name">Name:</label><br>
-        <input id="name" type="text" required><br><br>
-
-        <label for="email">Email:</label><br>
-        <input id="email" type="email" required><br><br>
-
-        <label for="message">Your Feedback:</label><br>
-        <textarea id="message" required></textarea><br><br>
-
+    <form onsubmit="showMessage(event)">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Your feedback" required></textarea>
         <button type="submit">Submit</button>
     </form>
+
+    <!-- ✅ SUCCESS MESSAGE (correct place) -->
+    <div id="successMessage" class="popup-message">
+        ✅ Your feedback has been successfully sent!
+    </div>
 
     <h2>Contact Information</h2>
     <p>Email: info@carkingdom.com</p>
@@ -63,9 +63,6 @@
     <p>Your feedback is private and will be kept confidential.</p>
 </main>
 
+<!-- FOOTER -->
 <footer>
     <p>&copy; 2026 Car Kingdom</p>
-</footer>
-
-</body>
-</html>

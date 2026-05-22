@@ -351,3 +351,18 @@ h2 {
         align-items: center;
     }
 }
+
+.popup-message {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: #c7a349;
+    color: #000;
+
+    padding: 15px 20px;
+    border-radius: 5px;
+
+    font-weight: bold;
+    }
